@@ -42,7 +42,7 @@ class DriverController extends Controller
             $user = User::create([
                 'name' => $request->name,
                 'email' => $request->email,
-                'password' => Hash::make($request->password),
+                'password' => Hash::make('12345678'),
                 'birthday' => $request->birthday,
                 'car_id' => $request->car_id,
                 'type' => User::DRIVER,
