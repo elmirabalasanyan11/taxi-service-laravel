@@ -25,6 +25,7 @@ class DriverRequest extends FormRequest
     {
         return [
             'name' => 'required',
+            'email' => 'required',
             'driver_license_number' => 'required',
             'driver_license_series' => 'required',
             'driver_license_expire_date' => 'required',
@@ -38,6 +39,7 @@ class DriverRequest extends FormRequest
     {
         return [
             'name.required' => 'Validation error message.',
+            'email.required' => 'Validation error message.',
             'driver_license_number.required' => 'Validation error message.',
             'driver_license_series.required' => 'Validation error message.',
             'driver_license_expire_date.required' => 'Validation error message.',

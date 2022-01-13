@@ -23,7 +23,7 @@ class TariffController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(TariffRequest $request)
@@ -37,7 +37,7 @@ class TariffController extends Controller
 
     /**
      * Display the specified resource.
-     * @param  \App\Models\Tariff  $tariff
+     * @param \App\Models\Tariff $tariff
      */
     public function show(Tariff $tariff)
     {
@@ -47,8 +47,8 @@ class TariffController extends Controller
 
     /**
      * Update the specified resource in storage.
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Tariff  $tariff
+     * @param \Illuminate\Http\Request $request
+     * @param \App\Models\Tariff $tariff
      */
     public function update(Request $request, Tariff $tariff)
     {
@@ -59,7 +59,7 @@ class TariffController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Tariff  $tariff
+     * @param \App\Models\Tariff $tariff
      * @return \Illuminate\Http\Response
      */
     public function destroy(Tariff $tariff)

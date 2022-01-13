@@ -44,7 +44,7 @@ class OrderService
         //calculate final cost
         $finalCost = $this->calculateCost($minCost, $totalMinutes, $freeMinutesCount, $totalKms, $freeKmsCount, $costPerMinute, $costPerKm);
 
-        if(!$totalKms || !$totalMinutes){
+        if (!$totalKms || !$totalMinutes) {
             return false;
         }
 

@@ -11,5 +11,5 @@ class DriverLicense extends Model
 
     protected $table = 'driver_license';
 
-    protected $fillable = [ 'user_id', 'number', 'series', 'expire_date'];
+    protected $fillable = ['user_id', 'number', 'series', 'expire_date'];
 }

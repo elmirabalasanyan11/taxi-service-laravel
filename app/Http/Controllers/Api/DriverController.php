@@ -97,6 +97,7 @@ class DriverController extends Controller
 
         if ($driver) {
             DB::beginTransaction();
+
             try {
                 $driver->update($request->all());
 

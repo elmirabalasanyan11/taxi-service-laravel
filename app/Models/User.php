@@ -50,21 +50,34 @@ class User extends Authenticatable
     const ADMIN = 'admin';
     const USER = 'user';
 
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     */
     public function car()
     {
         return $this->hasOne(Car::class, 'id', 'car_id');
     }
 
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     */
     public function driverLicense()
     {
         return $this->hasOne(DriverLicense::class);
     }
 
+    /**
+     * @return mixed
+     */
     public static function getDrivers()
     {
         return self::where('type', self::DRIVER)->get();
     }
 
+    /**
+     * @param $id
+     * @return mixed
+     */
     public static function getDriver($id)
     {
         return self::where('id', $id)

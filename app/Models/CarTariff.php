@@ -9,5 +9,6 @@ class CarTariff extends Model
 {
     use HasFactory;
 
+
     protected $table = 'car_tariffs';
 }

@@ -36,7 +36,7 @@ class OSRMApiService
         $response = null;
         $data = $this->getResult($fromCoordinateX . ',' . $fromCoordinateY . ';' . $toCoordinateX . ',' . $toCoordinateY, 'GET');
 
-        if($data){
+        if ($data) {
             $response = json_decode($data)->routes[0];
         }
 
@@ -52,9 +52,9 @@ class OSRMApiService
      */
     public function getDistance($fromCoordinateX, $fromCoordinateY, $toCoordinateX, $toCoordinateY)
     {
-        $response = $this->getDrivingData($fromCoordinateX, $fromCoordinateY, $toCoordinateX,  $toCoordinateY);
+        $response = $this->getDrivingData($fromCoordinateX, $fromCoordinateY, $toCoordinateX, $toCoordinateY);
 
-        if(!$response){
+        if (!$response) {
             return false;
         }
 
@@ -71,9 +71,9 @@ class OSRMApiService
      */
     public function getDuration($fromCoordinateX, $fromCoordinateY, $toCoordinateX, $toCoordinateY)
     {
-        $response =  $this->getDrivingData($fromCoordinateX, $fromCoordinateY, $toCoordinateX,  $toCoordinateY);
+        $response = $this->getDrivingData($fromCoordinateX, $fromCoordinateY, $toCoordinateX, $toCoordinateY);
 
-        if(!$response){
+        if (!$response) {
             return false;
         }
 

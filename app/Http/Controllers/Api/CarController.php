@@ -23,7 +23,7 @@ class CarController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(CarRequest $request)
@@ -44,7 +44,7 @@ class CarController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Car  $car
+     * @param \App\Models\Car $car
      */
     public function show(Car $car)
     {
@@ -54,9 +54,8 @@ class CarController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Car  $car
-
+     * @param \Illuminate\Http\Request $request
+     * @param \App\Models\Car $car
      */
     public function update(Request $request, Car $car)
     {
@@ -74,7 +73,7 @@ class CarController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Car  $car
+     * @param \App\Models\Car $car
      * @return \Illuminate\Http\Response
      */
     public function destroy(Car $car)

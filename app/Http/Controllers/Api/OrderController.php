@@ -26,14 +26,14 @@ class OrderController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return
      */
     public function store(OrderRequest $request, OrderService $orderService, OSRMApiService $OSRMApiService)
     {
         $order = $orderService->createOrder($request, $OSRMApiService);
 
-        if(!$order){
+        if (!$order) {
             return response()->json([
                 'status' => 'Failed',
                 'message' => 'Order is not created'
